@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/personagens.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css"
+        integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY="
+        crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Inter:wght@300;400;500;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/adriancooney/console.image/c9e6d4fd/console.image.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.0/tailwind.min.css"
+        integrity="sha256-CAI/7ThhltsmP2L2zKBYa7FknB3ZwFbD0nqL8FCdxdc="
+        crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Personagens</title>
+
+</head>
+<body>
+    <nav class="flex items-center bg-gray-800 p-3 flex-wrap">
+        <a href="#" class="p-2 mr-4 inline-flex items-center">
+          <svg
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="fill-current text-white h-8 w-8 mr-2"
+          >
+            <path
+              d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"
+            />
+          </svg>
+          <span class="text-xl text-white font-bold tracking-wide"
+            >Reino de Siena</span
+          >
+        </a>
+        <button
+          class="text-white inline-flex p-3 hover:bg-gray-900 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler"
+          data-target="#navigation"
+        >
+          <i class="material-icons">menu</i>
+        </button>
+        <div
+          class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto"
+          id="navigation"
+        >
+          <div
+            class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto"
+          >
+            <a
+              href="./index.html"
+              class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+            >
+              <span>Home</span>
+            </a>
+            <a
+              href="./cidades.html"
+              class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+            >
+              <span>Cidades</span>
+            </a>
+            <a
+              href="./historia.html"
+              class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+            >
+              <span>História</span>
+            </a>
+            <a
+              href="./personagens.html"
+              class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+            >
+              <span>Personagens</span>
+            </a>
+            <a
+              href="./militar.html"
+              class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+            >
+              <span>Hierarquia Hilitar</span>
+            </a>
+            <a
+              href="./magia.html"
+              class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+            >
+              <span>Magia</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="apresenta">
+        <div class="apresentacaoPersonagens">Conheça os Personagens que compoem o Império da Magia</div>
+
+        <div class="saberPersonagens">
+          Para saber mais sobre os personagens, clique no botão abaixo e descubra
+        </div>
+
+        
+        <div class="btn-personagens">
+          Conheça os membros dessa jornada
+        </div>
+
+      </div>
+
+      <section class="todosPersonagens">
+        <div class="personagemIndividual">
+          <img class="imagemPerso" src="./img/atreus.png" alt="">
+            <div class="person1">
+              <div class="nomePerso">Atreus Lunari</div>
+              <div class="resumoPersonagem"> Atreus é um jovem que procura acabar com os preconceitos e indiferenças entre os nobres e não nobres, visando alcançar o topo do exército para atingir seu tão almejado objetivo. Mostrar que todos são iguais e tem os mesmo direitos independentemente das classes sociais, guerras, conflitos, seu próximo objetivo será alcançar a paz entre os 4 países, um por um a paz será alcançada por um jovem que se inspirou em um dos maiores capitães de Siena!</div>
+              
+            </div>
+        </div>
+
+        <div class="personagemIndividual">
+          <img class="imagemPerso" src="./img/roghar.png" alt="">
+            <div class="person1">
+              <div class="nomePerso">Roghar Veldora</div>
+              <div class="resumoPersonagem" style="font-size: 1.2em"> Roghar Veldora é um adolescente de 16 anos do clã dragon que não teve a oportunidade de conhecer seus pais de sangue pois ambos foram mortos e quem o cria atualmente é uma mulher chamada Frith Veldora. Atualmente ele é um sargento da 5° divisão e tem o objetivo de se tornar um dos melhores médicos do mundo e ter o reconhecimento das pessoas. Ele possui um conduta de priorizar a vida das pessoas e nunca abandonar um amigo.
+                Atualmente Roghar passou por muita coisa e está com a mente um pouco confusa, deixando de ser alguém brincalhão e se tornando alguém mais sério e está com princípio de depressão.
+                Neste momento, Roghar está treinando com o Ronald que é um dos magos lendários, ele é um mago de suporte, sendo mais específico, um dos melhores médicos atualmente, e ambos estão prestes a trazer os dragões de volta a vida.</div>
+            </div>
+        </div>
+
+        <div class="personagemIndividual">
+          <img class="imagemPerso" src="./img/hanry1.png" alt="">
+            <div class="person1">
+              <div class="nomePerso">Etherious Dragon Hanry</div>
+              <div class="resumoPersonagem" style="font-size: 1.2em">A 15 anos atrás Hanry foi deixado em um pequeno cesto em uma igreja, no cesto estava escrito Etherious D Hanry, um pequeno bebê ruivo estava lá, o bebê foi encontrado por um padre chamado Andrew e foi adotado pelo mesmo cresceu com seu pai adotivo Andrew e seu irmão chamado Andrew philip, sim o mesmo nome do padre. Hanry cresceu forte e saudável brincando e zoando pela cidade de bélica é mesmo sendo pobre tinha a alegria de viver, o garoto enfrentou o preconceito por ser camponês e lutou por sua dignidade, sempre teve dom em lutas arrumando diversas brigas durante sua vida, protegendo os mais novos de pessoas esnobes, Hanry então viu nós soldados e principalmente no líder das forças um espelho, um caminho a qual queria seguir e ali nasceu seu sonho o garoto quer se tornar o futuro líder das forças para assim concluir seu verdadeiro sonho.</div>
+            </div>
+        </div>
+
+        <div class="personagemIndividual">
+          <img class="imagemPerso" src="./img/hanzo.png" alt="">
+            <div class="person1">
+              <div class="nomePerso">Hanzo Hakiri Genesis</div>
+              <div class="resumoPersonagem" style="font-size: 1.23em">Hanzo Hakiri Genesis, filho do lider do clã Noah Genesis. Hanzo possui a magia de Sangue Sombrio, por ser uma magia poderosa, o garoto não consegue usa-la na forma bruta, por isso utiliza jutsus para conseguir invoca-la, mas ela é tão poderosa que mesmo assim ele sofre de efeitos negativos quando a ativa. Por causa disso, treinou sua vida toda para ser um exímio espadachim e para reduzir seus danos, para que um dia consiga cumprir seu objetivo de achar uma pessoa importante, e assumir o clã no lugar de seu pai, ja que possuem desavenças entre si.</div>
+            </div>
+        </div>
+
+        <div class="personagemIndividual">
+          <img class="imagemPerso" src="./img/kyll.png" alt="">
+            <div class="person1">
+              <div class="nomePerso">Kyll Schiffer</div>
+              <div class="resumoPersonagem" style="font-size: 1.1em">Kyll é calmo, gentil, atencioso, empático, cuidadoso e sensível. Porém ele se sente muito inferior as pessoas que estão ao seu redor, prezando mais pela felicidade dos outros que a sua própria, sendo capaz de fazer sacrifícios incomuns por alguém. Kyll Schiffer vem de uma família nobre, um garoto com privilégios, em teoria não teria nada do que ele reclamar, mas não é bem assim.O pai de Kyll, Ethan Schiffer em um grande preconceito contra os camponeses, os não nobres, e sempre tentou influenciar Kyll pra que seguisse seus ideais, por sorte Kyll e seu irmão Andrew puxaram sua mãe, Leah Schiffer, que apesar de ser uma nobre e ter se casado com um homem preconceituoso, ela sempre foi gentil com todo mundo e diferentemente de Ethan, sempre se mostrou presente e tratou com carinho os seus filhos, e isso ocasionou algumas brigas entre o casal, Ethan afirmava que a forma como Leah tratava seus filhos os estava deixando "menos homem". <p onclick="openModal('dv-modal')" class="HellenLerMais">Ler Mais</p></div>
+            </div>
+        </div>
+
+        <div class="personagemIndividual">
+          <img class="imagemPerso" src="./img/margery.png" alt="">
+            <div class="person1">
+              <div class="nomePerso">Margery Gran Leans</div>
+              <div class="resumoPersonagem" style="font-size: 1.1em">Ensinada a ser desprezível, Margery é extremamente difícil de lidar, o egocentrismo e arrogância são suas características mais fortes. Porém, sua essência é linda, sendo facilmente moldada positivamente a partir de acontecimentos. Contudo, não pise em seu calo, Margery fará questão de devolver tudo o que fizer em dobro. Vinda de uma família extremamente rica, Margery sempre teve tudo o que quisera, vivia rodeada de empregadas que satisfaziam suas vontades, ia para qualquer lugar que quisesse, a hora que quisesse. O Sr. e a Sra. Gran Leans nunca deixariam que nada faltasse a sua filha. Pelo menos, nada material.<p onclick="openModal('dv-modal1')" class="HellenLerMais">Ler Mais</p></div>
+            </div>
+        </div>
+
+      </section>
+
+      <div class="linhaFina"></div>
+
+      <div id="dv-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1>História Kyll Schiffer</h1>
+            </div>
+
+            <div class="modal-body">
+                <p>Kyll Schiffer vem de uma família nobre, um garoto com privilégios, em teoria não teria nada do que ele reclamar, mas não é bem assim.O pai de Kyll, Ethan Schiffer em um grande preconceito contra os camponeses, os não nobres, e sempre tentou influenciar Kyll pra que seguisse seus ideais, por sorte Kyll e seu irmão Andrew puxaram sua mãe, Leah Schiffer, que apesar de ser uma nobre e ter se casado com um homem preconceituoso, ela sempre foi gentil com todo mundo e diferentemente de Ethan, sempre se mostrou presente e tratou com carinho os seus filhos, e isso ocasionou algumas brigas entre o casal, Ethan afirmava que a forma como Leah tratava seus filhos os estava deixando "menos homem". Andrew sempre se manteu calado durante as discussões, porém Kyll mesmo sendo o mais novo entre os irmão, era mais corajosos e acabava por defender sua mãe, e enfrentando seu pai, o que lhe custou umas belas surras. Desde pequeno, Kyll teve conflitos com seu pai, discordava de suas opiniões e descumpria suas ordens por achar que eram "erradas", isso acabou gerando desgosto por parte de seu pai com o passar do tempo, e seu pai acabou por dar mais atenção ao seu irmão Andrew e além de distanciar os dois irmãos já que Ethan não queria que Andrew se misturasse com Kyll, ele saia muito de casa e só levava o mais velho, deixando Kyll com sua mãe. Andrew era o primogênito, o perfeito, sempre seguiu tudo que o pai dizia, o filho perfeito pra um nobre, diferente de Kyll, que diversas vezes ouviu seu próprio pai dizer para os outros nobres que ele não passava de um acidente e não valia de nada, fora as comparações com seu irmão mais velho. Com o passar do tempo, Kyll acabou por tornando mais reservado e com medo de expressar sua própria
+                  opinião, as únicas pessoas que ele conversava eram sua mãe e seu irmão, ele não gostava de interagir com outros nobres por receio de serem iguais aos seu pai, basicamente, ele se isolou.<br><br>  Uma criança que cresceu sem amigos, sendo destruido mentalmente pelos seu próprio pai, acabou desenvolvendo uma síndrome de inferioridade que o acompanha até os dias atuais. E então a irmã de Kyll, Emily, nasceu, e por alguma razão ela se tornou muito apegada a Kyll com o passar do tempo, e Andrew conforme foi crescendo, percebeu a forma que o pai tratava seu irmão mais novo, mas ainda assim tinha muito medo do que seu pai poderia fazer com ele e seu irmão caso resolvesse confronta-lo. Andrew nunca enfrentou seu pai, porém ele inventou uma desculpa para que ficasse em casa por mais tempo, e acabou se reaproximando de seu irmão. Logo quando completou 17 anos, Kyll e Ethan discutiram feio, e Kyll acabou empurrando seu pai, que revidou lhe dando uma surra com socos e chutes, ocasionando diversos hematomas e fraturas em Kyll, a diferença de poder e força entre os dois era imensurável, o garoto desmaiou e depois de um longo tempo acordou, estava deitado em sua cama todo enfaixado e sua mãe estava na ponta da cama chorando, depois daquele dia, Kyll decidiu entrar no exército de Siena e prometeu para si mesmo que ia se vingar de tudo que seu pai fez.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" onclick="closeModal('dv-modal')">Fechar</button>
+            </div>
+        </div>
+      </div>
+
+      <div id="dv-modal1" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1>História Margery Gran Leans</h1>
+            </div>
+
+            <div class="modal-body">
+                <p>
+                  Os Gran Leans eram tudo, menos uma família.
+                  Criados como soldados, a prole da famía Gran e da família Leans, sofriam com um treinamento rígido e abusos vindo de seus pais. Nunca tiveram afeto, um abraço ou qualquer outro tipo de demonstração de carinho, tudo o que importava para Kenna e Portraid era a eficiência de seu batalhão.
+                  Vindos de famílias fundadoras de Siena, Portraid Gran Leans e Kenna Gran Leans se abastavam dos frutos de suas gerações passadas, porém, apesar de todo dinheiro, lhes faltavam muitas qualidades. 
+                  Detestados por todos a sua volta, os Gran Leans nunca foram conhecidos pelo seu carisma, honra, lealdade ou sinceridade. Os que estavam ao seu lado ou eram pagos para isso ou visavam ter sua amizade por interesse, sabiam muito bem disso, contudo, não davam a mínima, pois faziam o mesmo com as pessoas ao seu redor.
+                  Portraid era do clã Solaris, porém nenhuma luz vinha de um ser tão mesquinho. Extremamente calculista, sempre visava o seu bem, mesmo que para isso todos a sua volta sofressem.
+                  Já Kenna, também de Solaris, era uma exímia guerreira, porém não tão boa de coração como era em suas lutas.
+                  E desse casal desprezível nasce na cidade de Barlar Margery, um ser tão desprezível quanto seus antecessores.
+                  Ao decorrer da infância de Margery muitos empreados e babás se demitiam por medo, alegando que a pequena garota possuía algo maligno dentro de si.
+                  Eles estavam todos certos, realmente possuía algo maligno, mais especificamente um demônio.
+                  Esse demônio era Lilith, a primeira mulher do mundo.
+                  <br><br>-Nascimento de Margery
+                  31 de outubro de 1433, 3:33 da manhã.
+                  A madrugada havia começado chuvosa, como se a Terra pressentisse o que viria dentro de algumas horas. A previsão de um eclipse lunar para aquele dia assustava a todos os moradores do reino de Siena. Mesmo que a época das trevas acabara a alguns anos, uma lua de sangue nunca era bom sinal. Uma mulher entra em trabalho de parto próximo ao eclipse total, era Kenna, a guerreira de Solaris quem haveria de dar a luz em alguns instantes. Todos se recusavam a fazer aquele parto. “Ela selou um demônio dentro do corpo dessa criança enquanto ainda estava na barriga” se ouvia das más línguas, “Quem fizer este parto de certo terá a vida amaldiçoada eternamente” diziam-nas ruas da cidade, “Com certeza trará um mal desenfreado” diziam as não tão erradas fofoqueiras. Ao longe se ouvia os gritos de dor extrema da mulher em trabalho de parto, não gritos comuns e sim de agonia, tivera outros filhos antes, mas em nenhum sofrera tanto quando aquele, era como se seu corpo a punisse pelo ato de dar à luz a sua prole. Ao completo eclipse nascia em Siena uma infeliz alma perdida, mal sabia aquela pobre alma que nunca viria a realmente ser ela mesma, apenas seu eco disfarçado por traumas.
+                  As únicas coisas que restara de seu gene eram seu amor por animais e sua conexão com a natureza.
+                  Na sua infância, as únicas coisas que divertiam a garota envolviam sofrimento ou irá. Fazer suas empregadas serem punidas por algo que a própria havia feito e verem brigas que rolavam soltas em algum bar aleatório traziam êxtase a tão jovem garota.
+                  <br><br>Sua adolescência seguirá no mesmo caminho, sempre diminuindo todos a sua volta, bajulando quem ela sabia que tiraria algo em troca, enfim... continuava desprezível.
+                  Porém Margery sempre estivera acompanhada de uma alma adorável, Millie, sua irmã.
+                  Millie, uma garota com olhos banhado em amor, enxergava beleza no coração daquela quem todos odiavam. Compartilhando das mesmas paixões, duas almas se encontraram uma na outra, sendo uma a base que a outra precisava. Porém, o destino sãos seria tão justo para as duas. 
+                  Em um acidente, Millie acaba perdendo sua vida. Em uma família composta por 9 pessoas, apenas Margery e seu irmão mais velho Xoun compareceram no enterro de uma das almas mais puras que a Terra havia portado. 
+                  A reação da família de Margery para a perda daquela alma a revoltara, porém, o medo havia tomado conta de seu ser. A menina nunca teria coragem de ir contra as ordens de seus progenitores. Não até o fatídico dia.
+                  O fatídico dia, o dia em que Margery se rebelara e fugira de casa. Com medo de enfrentar aqueles que a abusaram diversas vezes, a menina cortara relações com sua família após terem encerrado a vida de um cachorrinho pertencente a Millie, o animal que Margery se apegara e que lhe fora arrancado com a desculpa de que aquilo estava lhe fazendo fraca. 
+                  Aos 17 anos, Margery foge de casa e começa a viver na cede dos Solaris, sem dar notícias de seu paradeiro, a menina viveu anos longe da família, porém ninguém a viera procurar.
+                  Não se importava muito, faria o que lhe fora ensinado, reprimiria todos os seus sentimentos e construiria uma casca em torno de si, a fim de nunca mais se magoar por nada nem ninguém. Porém, Margery não era assim, um dia essa muralha cairia e sua bela alma que lhe foi negada retornaria, só precisava achar pessoas certas para estarem ao seu lado.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" onclick="closeModal('dv-modal1')">Fechar</button>
+            </div>
+        </div>
+      </div>
+
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+        $(".btn-personagens").click(function() {
+          $('html, body').animate({
+            scrollTop: $(".todosPersonagens").offset().top
+          }, 1000);
+        });
+
+        $(document).ready(function () {
+        $(".nav-toggler").each(function (_, navToggler) {
+            var target = $(navToggler).data("target");
+            $(navToggler).on("click", function () {
+            $(target).animate({
+                height: "toggle",
+            });
+            });
+        });
+        });
+
+        function openModal(mn) {
+    let modal = document.getElementById(mn);
+
+    if (typeof modal == 'undefined' || modal === null)
+        return;
+
+    modal.style.display = 'Block';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal(mn) {
+    let modal = document.getElementById(mn);
+
+    if (typeof modal == 'undefined' || modal === null)
+        return;
+
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+    </script>
+</body>
+</html>

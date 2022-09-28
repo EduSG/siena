@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css"
+      integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY="
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.rawgit.com/adriancooney/console.image/c9e6d4fd/console.image.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Inter:wght@300;400;500;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.0/tailwind.min.css"
+      integrity="sha256-CAI/7ThhltsmP2L2zKBYa7FknB3ZwFbD0nqL8FCdxdc="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <nav class="flex items-center bg-gray-800 p-3 flex-wrap">
+      <a href="#" class="p-2 mr-4 inline-flex items-center">
+        <svg
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          class="fill-current text-white h-8 w-8 mr-2"
+        >
+          <path
+            d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"
+          />
+        </svg>
+        <span class="text-xl text-white font-bold tracking-wide"
+          >Reino de Siena</span
+        >
+      </a>
+      <button
+        class="text-white inline-flex p-3 hover:bg-gray-900 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler"
+        data-target="#navigation"
+      >
+        <i class="material-icons">menu</i>
+      </button>
+      <div
+        class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto"
+        id="navigation"
+      >
+        <div
+          class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto"
+        >
+          <a
+            href="./index.html"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+          >
+            <span>Home</span>
+          </a>
+          <a
+            href="./cidades.html"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+          >
+            <span>Cidades</span>
+          </a>
+          <a
+            href="./historia.html"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+          >
+            <span>História</span>
+          </a>
+          <a
+            href="./personagens.html"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+          >
+            <span>Personagens</span>
+          </a>
+          <a
+            href="./militar.html"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+          >
+            <span>Hierarquia Hilitar</span>
+          </a>
+          <a
+            href="./magia.html"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+          >
+            <span>Magia</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="apresenta">
+      <div style="text-align: center; font-size: 2.4em;" id="sas">Bem vindo a Siena</div>
+      <div style="text-align: center;" id="sas1">"O fracassado não é aquele que perdeu uma batalha. O verdadeiro fracassado é aquele que nunca tentou por medo de errar"</div>  
+    </div>
+
+    <div class="fileiraSecao">
+      <div onclick="window.location.replace('./magia.html')" id="anchorMagia" class="celula">
+        <img class="imgCard" src="./img/magia1.png" alt="">
+        <div class="titleCard">Magias</div>
+        <div class="apresentaCelula">Saiba mais sobre as Magias do Reino de Siena</div>
+      </div>
+      <div onclick="window.location.replace('./militar.html')" id="anchorMilitar" class="celula">
+        <img class="imgCard" src="./img/militar.png" alt="">
+        <div class="titleCard">Hierarquia Hilitar</div>
+        <div class="apresentaCelula">Saiba mais sobre a Hierarquia Militar do Reino de Siena</div>
+      </div>
+      <div onclick="window.location.replace('./historia.html')" id="anchorHist" class="celula">
+        <img class="imgCard" src="./img/historia.png" alt="">
+        <div class="titleCard">História</div>
+        <div class="apresentaCelula">Conheça a História do Reino de Siena</div>
+      </div>
+      <div onclick="window.location.replace('./personagens.html')" id="anchorPerso" class="celula">
+        <img class="imgCard" src="./img/personagens.png" alt="">
+        <div class="titleCard">Personagens</div>
+        <div class="apresentaCelula">Conheça os membros que fazem parte desta jornada</div>
+      </div>
+      <div onclick="window.location.replace('./cidades.html')" id="anchorCidade" class="celula">
+        <img class="imgCard" src="./img/cidades.png" alt="">
+        <div class="titleCard">Cidades</div>
+        <div class="apresentaCelula">Conheça as cidades do Reino de Siena</div>
+      </div>
+
+    </div>
+
+
+    <div class="fim"></div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+        $(document).ready(function () {
+        $(".nav-toggler").each(function (_, navToggler) {
+            var target = $(navToggler).data("target");
+            $(navToggler).on("click", function () {
+            $(target).animate({
+                height: "toggle",
+            });
+            });
+        });
+        });
+    </script>
+    
+    
+  </body>
+</html>

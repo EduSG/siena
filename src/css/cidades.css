@@ -1,0 +1,165 @@
+.controle{
+    height: 100%;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+.apresentation{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background-image: url("../img/8868699fe411e3d27bd37e5bc5693513.jpg");
+
+}
+
+.descCidade{
+    width: 40%;
+    padding: 10px;
+}
+
+.divisaoCidades{
+    background-color: #ebebeb;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divisaoCidades i{
+    border: 2px solid #000;
+    display: flex;
+    font-size: 2rem;
+    width: 5rem;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    color: #fff;
+    background-color: #000;
+    transition: all 0.3s;
+}
+.divisaoCidades i:hover{
+    color: #000;
+    background-color: #ebebeb;
+}
+
+.cidadeBelica{
+    display: flex;
+    background-color: #ebebeb;
+    align-items: center;
+}
+
+.cidadeBelica img{
+    display: flex;
+    width: 60%;
+}
+
+.textCi{
+    text-align: left;
+    font-size: 1.079rem;
+}
+
+.cidadeBelica h3{
+    display: block;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem
+}
+
+.controleH{
+    display: inline;
+    border-bottom: 2px solid #000;
+}
+
+.apresentacaoCidade{
+    width: 80%;
+    padding: 2rem;
+    margin: 0 auto;
+    border-bottom: 2px solid transparent;
+    margin-top: 5rem; 
+}
+
+.apresentacaoCidade p{
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.apresentacaoCidade h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 280%;
+    margin-bottom: 6rem;
+}
+
+.btn-cidades {
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    border-radius: 4px;
+    background-color: #3fe062;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px;
+    width: 40%;
+    transition: all 0.4s;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn-cidades span {
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .btn-cidades span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .btn-cidades:hover span {
+    padding-right: 25px;
+  }
+  
+  .btn-cidades:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .btn-cidades:active {
+    background-color: #35ba52;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+
+.espacoVazio{
+    height: 1rem;
+    background-color: #ebebeb;
+}
+
+.espacoVazioDois{
+    height: 10rem;
+    background-color: #ebebeb;
+}
+
+.customCity{
+    display: block;
+    margin: 0 auto;
+    width: 43%;
+    border-radius: 8px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.apresentation h1{
+    border-bottom: 2px solid #fff;
+}

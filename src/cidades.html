@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no" maximum-scale=2>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css"
+        integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY="
+        crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Inter:wght@300;400;500;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/adriancooney/console.image/c9e6d4fd/console.image.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.0/tailwind.min.css"
+        integrity="sha256-CAI/7ThhltsmP2L2zKBYa7FknB3ZwFbD0nqL8FCdxdc="
+        crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/cidades.css">
+</head>
+<body>
+    <nav class="flex items-center bg-gray-800 p-3 flex-wrap">
+        <a href="#" class="p-2 mr-4 inline-flex items-center">
+          <svg
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="fill-current text-white h-8 w-8 mr-2"
+          >
+            <path
+              d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"
+            />
+          </svg>
+          <span class="text-xl text-white font-bold tracking-wide"
+            >Reino de Siena</span
+          >
+        </a>
+        <button
+          class="text-white inline-flex p-3 hover:bg-gray-900 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler"
+          data-target="#navigation"
+        >
+          <i class="material-icons">menu</i>
+        </button>
+        <div
+          class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto"
+          id="navigation"
+        >
+          <div
+            class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto"
+          >
+            <a
+              href="./index.html"
+              class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+            >
+              <span>Home</span>
+            </a>
+            <a
+              href="./cidades.html"
+              class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+            >
+              <span>Cidades</span>
+            </a>
+            <a
+              href="./historia.html"
+              class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+            >
+              <span>História</span>
+            </a>
+            <a
+              href="./personagens.html"
+              class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+            >
+              <span>Personagens</span>
+            </a>
+            <a
+              href="./militar.html"
+              class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+            >
+              <span>Hierarquia Hilitar</span>
+            </a>
+            <a
+              href="./magia.html"
+              class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+            >
+              <span>Magia</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="controle">
+        <div class="apresentation">
+          <div class="customCity">
+            <div class="apresentacaoCidade">
+              <h1>Cidades de Siena</h1>
+              <p>
+                  Siena é um continente de reinos unidos por diversas questões, tanto politicas, culturais, religiosas, cientificas e até mesmo para se proteger de ataques de fora do continente. O reino de Siena de localiza no meio do mapa, sendo uma cidade construída sobre o mar, sendo ela o local da realeza, ponto comercial central e também onde circula a grande maioria dos cavaleiros de Siena. 
+              </p>
+            </div>
+          </div>
+          <div class="btn-cidades">
+            <span>Conhaça as cidades de Siena</span> 
+          </div>
+        </div>
+        <div class="divisaoCidades">
+          <i class='bx bx-down-arrow-alt'></i>
+        </div>
+
+        <div class="espacoVazio"></div>
+
+        <div id="belicaCity" class="cidadeBelica">
+          <img src="./img/15---sofia-maldonado-op3-pub-dq61zz.0bg0cp.image.iz9.jpg" alt="">
+          <div class="descCidade">
+            <h3><p class="controleH">Cidade Bélica</p></h3>
+
+            <p class="textCi">Cidade Bélica é localizada ao norte do continente de Siena. A cidade é conhecida principalmente pela sua riqueza de culturas antigas como danças, comidas e principalmente a religião, pensou em Bélica, lembrou de igreja! Bélica é governada por lideres religiosos, onde eles tem uma politica de igualdade conforme as necessidades. Os lideres reconhecem os produtos de agriculturas e outros recursos e dividem para as famílias de forma justa, por que? O nome Bélica foi dado por uma criança, cerca de 500 anos atrás, a cidade passava necessidades de fome e até mesmo o reino de Siena não entendia o porquê, já que todos estavam trabalhando de forma correta e não deveria estar tendo essa falta. A verdade que o antigo governador do local, um presidente listado pelo povo, estava desviando os alimentos e o ouro da cidade para outros continentes, afim de ganhar algumas recompensas em troca. <br><br> As igrejas já existiam nessa época e elas também eram lar adotivos para crianças órfãs e uma delas era Bélica, uma menina de 5 anos, loira, dos olhos azuis e vestido branco. A garota era sempre descrita como uma aventureira e ela dizia que iria encontrar a comida e encontrou, ela foi até a casa do governador e tirou algumas fotos da comida, mas quando estava quase saindo, ela foi encontrada por ele e logo assassinada de forma brutal, mas com ajuda da policia, eles encontraram a câmera e seu corpo enterrado. Hoje a igreja governa o local de uma forma que eles pensam que é justa e deram nome da cidade ao sacrifício da garota, Bélica </p>
+          </div>
+        </div>
+        <div class="espacoVazioDois"></div>
+        <div class="cidadeBelica">
+          <div class="descCidade">
+            <h3><p class="controleH">Cidade Dublin</p></h3>
+
+            <p class="textCi">A cidade Dublin, aquela ao Oeste do reino de Siena. Estar a procura de festas? farras que começam no fim de semana e só termina até todos dizerem chega? Você nasceu para ser de Dublin, mas cuidado para não querer experimentar todos os 100 tipos de vinhos que existem no local... Dublin é a cidade da cultura do vinho e das festas, além de serem responsáveis pelos eventos dentro do reino de Siena, onde o próprio Rei adora as danças dessa cidade... mas devemos subestimar Dublin?<br><Br> Cuidado que dessa cidade saiu um dos maiores capitães de exercito do reino de Siena, aquele que não precisava de espadas ou escudo, ele lutava apenas usando uma flauta e seu copo de vinho do lado. Aqueles criados em Dublin aprendem dês de cedo a cultura dos festejos e do vinho, uma receita secreta que nem o próprio rei conhece o segredo essa lendária bebida. A politica do local gira entorno de moedas de ouro, onde você trabalha, ganha e depois compra o que deseja, como qualquer outro ponto comercial, diferente de Bélica que é divisão dos bens.</p>
+          </div>
+
+          <img src="./img/the_market1.jpg.crdownload" alt="">
+          
+        </div>
+
+        <div class="espacoVazioDois"></div>
+
+        <div class="cidadeBelica">
+          <img src="./img/Viking_village_by_drake1024-d8926p6.jpg" alt="oi">
+          <div class="descCidade">
+            <h3><p class="controleH">Cidade Brugues</p></h3>
+
+            <p class="textCi">Ao leste do reino de Siena, enfim chegamos em Brugues, mas fale mais grosso, não queremos voz finas aqui, isso vale para vocês mulheres também, entenderam? Brugues cria os maiores homens e mulheres de todo o reino, onde dês de pequeno, sem discriminar nenhum gênero, todos irão para agricultura, fazendo da plantação, colheita e até mesmo na cozinha. Garotos tem pelos no rosto com apenas 10 anos e meninas já estão carregando sacos de milhos em seus 10 anos! Só aqueles fortes de coração e alma conseguem viver dentro dessa cidade.<br><br> Músculos? Quase todos os cidadãos já participaram de campeonatos de quebra de braço, campeonatos de luta e até mesmo de culinária... pera, culinária?  Sim. até mesmo os trogloditas de Brugues conseguiram formar um dos melhores restaurantes do continente, tendo mãos para plantar e mãos para cozinhar!</p>
+          </div>
+        </div>
+
+        <div class="espacoVazioDois"></div>
+
+        <div class="cidadeBelica">
+          <div class="descCidade">
+            <h3><p class="controleH">Cidade de Barlar</p></h3>
+
+            <p class="textCi">A cidade ao sul de Siena, possivelmente a cidade mais diferente dentre todas as quatro. Barlar é uma cidade industrial, aquela que deixou o trabalho braçal de lado e focou em estudos, ciência e explorações do impossível. A cidade é cheia de prédios, as primeiras ruas do continente que possuem veículos movido ao carvão e poucos ainda transportes aéreos, já que é uma descoberta nova e possivelmente ainda perigosa por falta de informações sobre ela.<br><br> A cidade Barlar é uma cidade de forja, aquela que minera e cria as armas, escudos e armaduras para o reino de Siena. Siena confia livremente nas habilidades de cada cidadão dali, para que eles consigam continuar estudando progredindo e ajudando as pessoas com próteses, lanternas a luz e comunicadores a longa distancia. No entanto, toda cidade com grandes descobertas e milagres, tem seus pecados... Barlar é uma cidade que infelizmente sofre com o acumulo de fumaça que as fabricas e forjas liberam, deixando diversas pessoas doentes, frágeis de seus pulmões e algumas vão até a óbito...</p>
+          </div>
+
+          <img src="./img/barlar.jpg" alt="">
+          
+        </div>
+      </div>
+
+      <div class="espacoVazioDois"></div>
+      <script src="jquery-3.6.0.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+        $(".btn-cidades").click(function() {
+          $('html, body').animate({
+            scrollTop: $("#belicaCity").offset().top
+          }, 1000);
+        });
+
+
+        $(document).ready(function () {
+        $(".nav-toggler").each(function (_, navToggler) {
+            var target = $(navToggler).data("target");
+            $(navToggler).on("click", function () {
+            $(target).animate({
+                height: "toggle",
+            });
+            });
+        });
+        });
+
+    </script>
+</body>
+</html>
