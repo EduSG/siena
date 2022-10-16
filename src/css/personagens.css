@@ -97,6 +97,7 @@ body {
 
 .imagemPerso{
     height: 35vh;
+    min-width: 15em;
 }
 
 .person1{
